@@ -215,6 +215,19 @@ h3 {
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   animation: fadeUp 0.9s ease forwards;
+  grid-template-rows: auto 1fr;
+}
+
+.product-card > div:last-child {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-card > div:last-child .text-link {
+  margin-top: auto;
+  padding-top: 12px;
+  align-self: start;
 }
 
 .logo {
@@ -228,6 +241,12 @@ h3 {
   font-size: 2rem;
   color: var(--accent-dark);
   border: 1px solid var(--line);
+}
+
+.logo img {
+  width: 46px;
+  height: 46px;
+  display: block;
 }
 
 .text-link {
